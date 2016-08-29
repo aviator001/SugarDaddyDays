@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="sddays" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>SugarDaddyDays.com</name>
+    <description>
+        SD Dating
+    </description>
+    <author email="g@txt.am" href="https://sugardaddydays.com">
+		Gautam Sharma
+    </author>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="EnableViewportScale" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <plugin name="cordova-plugin-whitelist" version="1.0.0" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <hook type="after_platform_add" src="hooks/iosrtc-swift-support.js" />
+    </platform>
+    <plugin name="cordova-plugin-crosswalk-webview" spec="https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview" />
+    <plugin name="cordova-plugin-device" version="^1.0.1" />
+    <plugin name="cordova-plugin-camera" spec="https://github.com/eface2face/cordova-plugin-camera" />
+    <plugin name="cordova-plugin-iosrtc" version="^2.0.1" />
+</widget>
